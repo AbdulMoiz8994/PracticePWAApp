@@ -12,7 +12,7 @@ self.addEventListener("install", function (event) {
       .open(cacheName)
       .then(function (data) {
         console.log("In service Workder we are saving our file in cahe");
-        return data.addAll(["/", "./index.html", "./home.html",'./About.html']);
+        return data.addAll(["/", "./index.html", "./home.html"]);
       })
       .catch(function (err) {
         console.error(err.message);
